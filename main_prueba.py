@@ -1,14 +1,10 @@
 
 from registrar import registrar_venta
-def resumen_ventas(ventas):
-    print("Resumen de ventas:")
-    total = 0
-    for venta in ventas:
-        print("producto:", venta["producto"])
-        print("cantidad:", venta["cantidad"])
+from registrar import continuar_venta
+from resumen import resumen_ventas  
 
+ventas = []
 
-    
-
-    for venta in ventas:
-        total += venta["precio"] * venta["cantidad"]
+registrar_venta(ventas)
+continuar_venta(ventas)
+resumen_ventas(ventas)
