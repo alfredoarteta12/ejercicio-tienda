@@ -1,16 +1,19 @@
-ventas = []
 def resumen_ventas(ventas):
-    print("Resumen de ventas:")
-    
-    for venta in ventas:
-      print(f"Producto: {venta['producto']}, Cantidad: {venta['cantidad']}")
-          
+
     total = 0
+
+    print("\nResumen de ventas")
+    print("------------------")
+
     for venta in ventas:
-      total += venta["precio"] * venta["cantidad"]
+        producto = venta["producto"]
+        precio = venta["precio"]
+        cantidad = venta["cantidad"]
+        subtotal = precio * cantidad
 
-    print("Total vendido:", total)
+        print(f"Producto: {producto} , Cantidad: {cantidad} ")
 
+        total += subtotal
 
-
-
+    print("------------------")
+    print(f"Total vendido: {total}")
