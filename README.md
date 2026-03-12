@@ -1,4 +1,4 @@
- # Registro venta en un  tienda #
+ # Store sales registration automation #
 
   Project Description
 
