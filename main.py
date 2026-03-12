@@ -1,10 +1,9 @@
+from registrar import register_sale
+from registrar import continue_sale
+from resumen import sales_summary  
 
-from registrar import registrar_venta
-from registrar import continuar_venta
-from resumen import resumen_ventas  
+sales = []
 
-ventas = []
-
-registrar_venta(ventas)
-continuar_venta(ventas)
-resumen_ventas(ventas)
+register_sale(sales)
+continue_sale(sales)
+sales_summary(sales)

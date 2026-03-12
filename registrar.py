@@ -1,29 +1,29 @@
-def registrar_venta(ventas):
-    
-    producto = input("Ingrese nombre del producto: ")
-    precio = int(input("Ingrese precio del producto: "))
-    cantidad = int(input("Ingrese cantidad del producto: "))
+def register_sale(sales):
 
-    venta = {
-        "producto": producto,
-        "precio": precio,
-        "cantidad": cantidad
+    product = input("Enter product name: ")
+    price = int(input("Enter product price: "))
+    quantity = int(input("Enter product quantity: "))
+
+    sale = {
+        "product": product,
+        "price": price,
+        "quantity": quantity
     }
 
-    ventas.append(venta)
+    sales.append(sale)
 
-    valor_venta = precio * cantidad
-    print(f"El valor de la venta es: {valor_venta}")
+    sale_value = price * quantity
+    print(f"The value of the sale is: {sale_value}")
 
-    return ventas
+    return sales
 
 
-def continuar_venta(ventas):
+def continue_sale(sales):
 
-    registrar_nueva_venta = input("¿Desea registrar nueva venta? si/no: ")
+    register_new_sale = input("Do you want to register a new sale? yes/no: ")
 
-    while registrar_nueva_venta.lower() == "si":
-        registrar_venta(ventas)
-        registrar_nueva_venta = input("¿Desea registrar nueva venta? si/no: ")
+    while register_new_sale.lower() == "yes":
+        register_sale(sales)
+        register_new_sale = input("Do you want to register a new sale? yes/no: ")
 
-    return ventas
+    return sales

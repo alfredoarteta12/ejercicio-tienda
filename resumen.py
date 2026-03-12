@@ -1,19 +1,20 @@
-def resumen_ventas(ventas):
+def sales_summary(sales):
 
     total = 0
 
-    print("\nResumen de ventas")
+    print("\nSales Summary")
     print("------------------")
 
-    for venta in ventas:
-        producto = venta["producto"]
-        precio = venta["precio"]
-        cantidad = venta["cantidad"]
-        subtotal = precio * cantidad
+    for sale in sales:
+        product = sale["product"]
+        price = sale["price"]
+        quantity = sale["quantity"]
+        subtotal = price * quantity
 
-        print(f"Producto: {producto} , Cantidad: {cantidad} ")
+        print(f"Product: {product} , Quantity: {quantity}")
 
         total += subtotal
 
     print("------------------")
-    print(f"Total vendido: {total}")
+    print(f"Total sold: {total}")
+    print("Thank you for using our program :>:")
