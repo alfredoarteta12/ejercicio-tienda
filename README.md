@@ -36,3 +36,5 @@ Request product information from the user (product name, price, and quantity).
 Automatically calculate the total value of each sale.
 
 Generate a summary of all registered sales.
+
+# Made by:_Alfredo Arteta_ #
