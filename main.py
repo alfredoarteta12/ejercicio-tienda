@@ -1,9 +1,7 @@
-from registrar import register_sale
-from registrar import continue_sale
-from resumen import sales_summary  
+from menu import menu
+
 
 sales = []
 
-register_sale(sales)
-continue_sale(sales)
-sales_summary(sales)
+menu(sales)
+
